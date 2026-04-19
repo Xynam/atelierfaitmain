@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galerie — L'Atelier Fait Main</title>
+  <meta name="description" content="Galerie de créations artisanales : dessins, tableaux, port-clés. Toutes les pièces sont faites à la main." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://xynam.github.io/Portfolio/pages/galerie.html" />
+  <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/main.css" />
+  <link rel="stylesheet" href="../assets/css/galerie.css" />
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor cursor--ring" id="cursorRing"></div>
+
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="../index.html" class="nav__logo">
+        <span class="nav__logo-main">L'Atelier Fait Main</span>
+        <span class="nav__logo-sub">Créations artisanales</span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="../index.html" class="nav__link">Accueil</a></li>
+        <li><a href="galerie.html" class="nav__link nav__link--active">Galerie</a></li>
+        <li><a href="a-propos.html" class="nav__link">À propos</a></li>
+        <li><a href="contact.html" class="nav__link">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="nav__contact">Commander</a>
+      <button class="nav__hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="mobileMenu">
+      <a href="../index.html">Accueil</a>
+      <a href="galerie.html">Galerie</a>
+      <a href="a-propos.html">À propos</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <!-- En-tête de page -->
+  <section class="page-hero section">
+    <div class="container page-hero__inner">
+      <span class="section__eyebrow reveal">Galerie complète</span>
+      <h1 class="reveal reveal--delay-1">Toutes les<br/><em>créations</em></h1>
+      <p class="section__desc reveal reveal--delay-2">Dessins, tableaux, port-clés et autres objets faits main. Chaque pièce est unique et disponible à la commande.</p>
+    </div>
+  </section>
+
+  <!-- Galerie -->
+  <section class="galerie section" style="padding-top: 0;">
+    <div class="container">
+
+      <!-- Filtre -->
+      <div class="filtre reveal">
+        <button class="filtre__btn filtre__btn--active" data-filter="tout">Tout</button>
+        <button class="filtre__btn" data-filter="dessins">Dessins</button>
+        <button class="filtre__btn" data-filter="tableaux">Tableaux</button>
+        <button class="filtre__btn" data-filter="portcles">Port-clés</button>
+        <button class="filtre__btn" data-filter="autres">Autres</button>
+      </div>
+
+      <!-- Grille -->
+      <div class="galerie__grille" id="galerieGrille">
+
+        <div class="oeuvre reveal" data-cat="dessins">
+          <div class="oeuvre__img">
+            <div class="oeuvre__placeholder" style="background: linear-gradient(145deg, #ede4d8, #c8a880);"></div>
+            <div class="oeuvre__badge">Dessin</div>
+            <div class="oeuvre__overlay"><span>Voir →</span></div>
+          </div>
+          <div class="oeuvre__info">
+            <h3>Série Forêt nº1</h3>
+            <p>Crayon graphite sur papier — 21×29 cm</p>
+          </div>
+        </div>
+
+        <div class="oeuvre reveal reveal--delay-1" data-cat="tableaux">
+          <div class="oeuvre__img">
+            <div class="oeuvre__placeholder" style="background: linear-gradient(145deg, #e0d4c4, #b89060);"></div>
+            <div class="oeuvre__badge">Tableau</div>
+            <div class="oeuvre__overlay"><span>Voir →</span></div>
+          </div>
+          <div class="oeuvre__info">
+            <h3>Horizon doré</h3>
+            <p>Acrylique sur toile — 40×50 cm</p>
+          </div>
+        </div>
+
+        <div class="oeuvre reveal reveal--delay-2" data-cat="portcles">
+          <div class="oeuvre__img">
+            <div class="oeuvre__placeholder" style="background: linear-gradient(145deg, #d8ccc0, #a88868);"></div>
+            <div class="oeuvre__badge">Port-clé</div>
+            <div class="oeuvre__overlay"><span>Voir →</span></div>
+          </div>
+          <div class="oeuvre__info">
+            <h3>Port-clé Lune</h3>
+            <p>Résine époxy — 4×6 cm</p>
+          </div>
+        </div>
+
+        <div class="oeuvre reveal" data-cat="dessins">
+          <div class="oeuvre__img">
+            <div class="oeuvre__placeholder" style="background: linear-gradient(145deg, #e8e0d4, #c0a888);"></div>
+            <div class="oeuvre__badge">Dessin</div>
+            <div class="oeuvre__overlay"><span>Voir →</span></div>
+          </div>
+          <div class="oeuvre__info">
+            <h3>Série Forêt nº2</h3>
+            <p>Encre de chine sur papier — 30×40 cm</p>
+          </div>
+        </div>
+
+        <div class="oeuvre reveal reveal--delay-1" data-cat="tableaux">
+          <div class="oeuvre__img">
+            <div class="oeuvre__placeholder" style="background: linear-gradient(145deg, #ddd0c0, #a88050);"></div>
+            <div class="oeuvre__badge">Tableau</div>
+            <div class="oeuvre__overlay"><span>Voir →</span></div>
+          </div>
+          <div class="oeuvre__info">
+            <h3>Abstraction nº7</h3>
+            <p>Aquarelle sur papier — 24×32 cm</p>
+          </div>
+        </div>
+
+        <div class="oeuvre reveal reveal--delay-2" data-cat="portcles">
+          <div class="oeuvre__img">
+            <div class="oeuvre__placeholder" style="background: linear-gradient(145deg, #ccc4b8, #988070);"></div>
+            <div class="oeuvre__badge">Port-clé</div>
+            <div class="oeuvre__overlay"><span>Voir →</span></div>
+          </div>
+          <div class="oeuvre__info">
+            <h3>Port-clé Fleur</h3>
+            <p>Cuir travaillé — 3×7 cm</p>
+          </div>
+        </div>
+
+        <div class="oeuvre reveal" data-cat="dessins">
+          <div class="oeuvre__img">
+            <div class="oeuvre__placeholder" style="background: linear-gradient(145deg, #f0e8dc, #d0b090);"></div>
+            <div class="oeuvre__badge">Dessin</div>
+            <div class="oeuvre__overlay"><span>Voir →</span></div>
+          </div>
+          <div class="oeuvre__info">
+            <h3>Portrait I</h3>
+            <p>Stylo à bille sur papier — 15×21 cm</p>
+          </div>
+        </div>
+
+        <div class="oeuvre reveal reveal--delay-1" data-cat="tableaux">
+          <div class="oeuvre__img">
+            <div class="oeuvre__placeholder" style="background: linear-gradient(145deg, #d4c8b8, #a89070);"></div>
+            <div class="oeuvre__badge">Tableau</div>
+            <div class="oeuvre__overlay"><span>Voir →</span></div>
+          </div>
+          <div class="oeuvre__info">
+            <h3>Paysage calme</h3>
+            <p>Huile sur toile — 50×60 cm</p>
+          </div>
+        </div>
+
+        <div class="oeuvre reveal reveal--delay-2" data-cat="autres">
+          <div class="oeuvre__img">
+            <div class="oeuvre__placeholder" style="background: linear-gradient(145deg, #e0d8cc, #b8a080);"></div>
+            <div class="oeuvre__badge">Autre</div>
+            <div class="oeuvre__overlay"><span>Voir →</span></div>
+          </div>
+          <div class="oeuvre__info">
+            <h3>Marque-page brodé</h3>
+            <p>Broderie sur lin — 5×18 cm</p>
+          </div>
+        </div>
+
+        <div class="oeuvre reveal" data-cat="dessins">
+          <div class="oeuvre__img">
+            <div class="oeuvre__placeholder" style="background: linear-gradient(145deg, #ece4d8, #c8a880);"></div>
+            <div class="oeuvre__badge">Dessin</div>
+            <div class="oeuvre__overlay"><span>Voir →</span></div>
+          </div>
+          <div class="oeuvre__info">
+            <h3>Série Forêt nº3</h3>
+            <p>Fusain sur papier — 21×29 cm</p>
+          </div>
+        </div>
+
+        <div class="oeuvre reveal reveal--delay-1" data-cat="portcles">
+          <div class="oeuvre__img">
+            <div class="oeuvre__placeholder" style="background: linear-gradient(145deg, #d0c8bc, #a09080);"></div>
+            <div class="oeuvre__badge">Port-clé</div>
+            <div class="oeuvre__overlay"><span>Voir →</span></div>
+          </div>
+          <div class="oeuvre__info">
+            <h3>Port-clé Étoile</h3>
+            <p>Bois gravé et résine — 3×5 cm</p>
+          </div>
+        </div>
+
+        <div class="oeuvre reveal reveal--delay-2" data-cat="tableaux">
+          <div class="oeuvre__img">
+            <div class="oeuvre__placeholder" style="background: linear-gradient(145deg, #e8dcd0, #c4a078);"></div>
+            <div class="oeuvre__badge">Tableau</div>
+            <div class="oeuvre__overlay"><span>Voir →</span></div>
+          </div>
+          <div class="oeuvre__info">
+            <h3>Composition III</h3>
+            <p>Technique mixte sur toile — 60×80 cm</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="galerie__footer reveal">
+        <p>Vous ne trouvez pas ce que vous cherchez ?</p>
+        <a href="contact.html" class="btn btn--outline">Faire une commande personnalisée →</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <div class="footer__brand-name">L'Atelier Fait Main</div>
+        <p>Des créations artisanales nées d'un geste sincère. Chaque pièce est unique et faite avec soin, pour durer.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="../index.html">Accueil</a></li>
+          <li><a href="galerie.html">Galerie</a></li>
+          <li><a href="a-propos.html">À propos</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Réseaux</h4>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Pinterest</a></li>
+          <li><a href="#">Etsy</a></li>
+          <li><a href="#">GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>© 2025 L'Atelier Fait Main — Tous droits réservés</p>
+      <p>Fait avec soin ✦</p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/galerie.js"></script>
+</body>
+</html>

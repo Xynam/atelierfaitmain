@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — L'Atelier Fait Main</title>
+  <meta name="description" content="Contactez L'Atelier Fait Main pour une commande personnalisée ou toute question sur les créations." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://xynam.github.io/Portfolio/pages/contact.html" />
+  <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/main.css" />
+  <link rel="stylesheet" href="../assets/css/contact.css" />
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor cursor--ring" id="cursorRing"></div>
+
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="../index.html" class="nav__logo">
+        <span class="nav__logo-main">L'Atelier Fait Main</span>
+        <span class="nav__logo-sub">Créations artisanales</span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="../index.html" class="nav__link">Accueil</a></li>
+        <li><a href="galerie.html" class="nav__link">Galerie</a></li>
+        <li><a href="a-propos.html" class="nav__link">À propos</a></li>
+        <li><a href="contact.html" class="nav__link nav__link--active">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="nav__contact">Commander</a>
+      <button class="nav__hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="mobileMenu">
+      <a href="../index.html">Accueil</a>
+      <a href="galerie.html">Galerie</a>
+      <a href="a-propos.html">À propos</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <!-- En-tête -->
+  <section class="page-hero section">
+    <div class="container page-hero__inner">
+      <span class="section__eyebrow reveal">Me contacter</span>
+      <h1 class="reveal reveal--delay-1">Parlons de<br/><em>votre projet.</em></h1>
+      <p class="section__desc reveal reveal--delay-2">Commande personnalisée, question sur une pièce, ou simplement envie d'échanger — je réponds sous 48h.</p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact section" style="padding-top: 0;">
+    <div class="container contact__layout">
+
+      <aside class="contact__aside">
+        <div class="contact__bloc reveal">
+          <h3>Pour commencer</h3>
+          <p>Décrivez-moi votre idée : le type de création souhaité, les dimensions approximatives, les couleurs ou le thème. Plus vous partagez, mieux je peux vous guider.</p>
+        </div>
+        <div class="contact__details reveal reveal--delay-1">
+          <div class="contact__detail">
+            <span class="contact__detail-label">Email</span>
+            <a href="mailto:atelier@example.com">atelier@example.com</a>
+          </div>
+          <div class="contact__detail">
+            <span class="contact__detail-label">Délai de réponse</span>
+            <span>Sous 48 heures</span>
+          </div>
+          <div class="contact__detail">
+            <span class="contact__detail-label">Commandes</span>
+            <span>Ouvertes ✦</span>
+          </div>
+        </div>
+        <div class="contact__reseaux reveal reveal--delay-2">
+          <h4>Suivre l'atelier</h4>
+          <div class="contact__reseaux-liens">
+            <a href="#">Instagram</a>
+            <a href="#">Pinterest</a>
+            <a href="#">Etsy</a>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Formulaire -->
+      <div class="contact__form-wrap reveal reveal--delay-1">
+        <form class="contact__form" id="contactForm" novalidate>
+          <div class="form__rangee">
+            <div class="form__groupe">
+              <label for="nom">Votre nom *</label>
+              <input type="text" id="nom" name="nom" placeholder="Marie Dupont" required autocomplete="name" />
+              <span class="form__erreur" id="nomErreur"></span>
+            </div>
+            <div class="form__groupe">
+              <label for="email">Email *</label>
+              <input type="email" id="email" name="email" placeholder="marie@example.com" required autocomplete="email" />
+              <span class="form__erreur" id="emailErreur"></span>
+            </div>
+          </div>
+          <div class="form__groupe">
+            <label for="type">Type de création</label>
+            <select id="type" name="type">
+              <option value="" disabled selected>Choisir…</option>
+              <option value="dessin">Dessin / Illustration</option>
+              <option value="tableau">Tableau / Peinture</option>
+              <option value="portcle">Port-clé</option>
+              <option value="autre">Autre objet artisanal</option>
+              <option value="surprise">Surprise / Cadeau</option>
+            </select>
+          </div>
+          <div class="form__groupe">
+            <label for="budget">Budget approximatif</label>
+            <select id="budget" name="budget">
+              <option value="" disabled selected>Choisir…</option>
+              <option value="<20">Moins de 20 €</option>
+              <option value="20-50">20 € – 50 €</option>
+              <option value="50-100">50 € – 100 €</option>
+              <option value="100+">Plus de 100 €</option>
+              <option value="nsp">Je ne sais pas encore</option>
+            </select>
+          </div>
+          <div class="form__groupe">
+            <label for="message">Décrivez votre projet *</label>
+            <textarea id="message" name="message" rows="5" placeholder="Racontez-moi votre idée : dimensions, couleurs, occasion, destinataire…" required></textarea>
+            <span class="form__erreur" id="messageErreur"></span>
+          </div>
+          <div class="form__pied">
+            <button type="submit" class="btn btn--dark" id="submitBtn">
+              <span class="btn__text">Envoyer le message</span>
+              <span class="btn__chargement" hidden>Envoi en cours…</span>
+            </button>
+          </div>
+          <div class="form__succes" id="formSucces" hidden>
+            <div class="form__succes-icone">✦</div>
+            <h4>Message reçu !</h4>
+            <p>Merci pour votre message. Je vous répondrai dans les 48 heures.</p>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <div class="footer__brand-name">L'Atelier Fait Main</div>
+        <p>Des créations artisanales nées d'un geste sincère. Chaque pièce est unique et faite avec soin, pour durer.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="../index.html">Accueil</a></li>
+          <li><a href="galerie.html">Galerie</a></li>
+          <li><a href="a-propos.html">À propos</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Réseaux</h4>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Pinterest</a></li>
+          <li><a href="#">Etsy</a></li>
+          <li><a href="#">GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>© 2025 L'Atelier Fait Main — Tous droits réservés</p>
+      <p>Fait avec soin ✦</p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/contact.js"></script>
+</body>
+</html>

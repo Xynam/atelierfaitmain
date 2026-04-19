@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galerie — L'Atelier Fait Main</title>
+  <meta name="description" content="Découvrez toutes les créations de L'Atelier Fait Main : dessins, peintures, port-clés et objets artisanaux." />
+  <link rel="canonical" href="https://xynam.github.io/pages/galerie.html" />
+  <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/main.css" />
+  <link rel="stylesheet" href="../assets/css/galerie.css" />
+</head>
+<body>
+
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="../index.html" class="nav__logo">
+        <span class="nav__logo-text">L'Atelier <em>Fait Main</em></span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="../index.html" class="nav__link">Accueil</a></li>
+        <li><a href="galerie.html" class="nav__link nav__link--active">Galerie</a></li>
+        <li><a href="about.html" class="nav__link">À propos</a></li>
+        <li><a href="contact.html" class="nav__link">Contact</a></li>
+      </ul>
+      <button class="nav__hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="mobileMenu">
+      <ul>
+        <li><a href="../index.html">Accueil</a></li>
+        <li><a href="galerie.html">Galerie</a></li>
+        <li><a href="about.html">À propos</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero__label reveal">Portfolio</div>
+      <h1 class="reveal reveal--delay-1">La galerie</h1>
+      <p class="reveal reveal--delay-2">Toutes mes créations, au même endroit. Chaque pièce est unique et faite à la main.</p>
+    </div>
+  </section>
+
+  <section class="galerie section">
+    <div class="container">
+
+      <!-- Filter bar -->
+      <div class="galerie__filter reveal">
+        <button class="tag tag--active" data-filter="all">Tout voir</button>
+        <button class="tag" data-filter="dessin">Dessins</button>
+        <button class="tag" data-filter="peinture">Peintures</button>
+        <button class="tag" data-filter="portcle">Port-clés</button>
+        <button class="tag" data-filter="autre">Autres</button>
+      </div>
+
+      <!-- Gallery grid -->
+      <div class="galerie__grid" id="galerieGrid">
+
+        <div class="galerie__item reveal" data-cat="peinture">
+          <div class="galerie__img" style="aspect-ratio:3/4">
+            <div class="galerie__bg" style="background:linear-gradient(160deg,#e8ddd0,#c8b89a,#a89070)"></div>
+            <div class="galerie__overlay">
+              <div class="galerie__overlay-content">
+                <span>Peinture</span>
+                <h3>Sans titre #4</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="galerie__item reveal reveal--delay-1" data-cat="dessin">
+          <div class="galerie__img" style="aspect-ratio:4/3">
+            <div class="galerie__bg" style="background:linear-gradient(160deg,#dde8dd,#b8ccb8,#92a892)"></div>
+            <div class="galerie__overlay">
+              <div class="galerie__overlay-content">
+                <span>Dessin</span>
+                <h3>Portrait au crayon</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="galerie__item reveal reveal--delay-2" data-cat="portcle">
+          <div class="galerie__img" style="aspect-ratio:1">
+            <div class="galerie__bg" style="background:linear-gradient(160deg,#e8dde8,#ccb8cc,#a890a8)"></div>
+            <div class="galerie__overlay">
+              <div class="galerie__overlay-content">
+                <span>Port-clé</span>
+                <h3>Lune brodée</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="galerie__item reveal" data-cat="peinture">
+          <div class="galerie__img" style="aspect-ratio:4/3">
+            <div class="galerie__bg" style="background:linear-gradient(160deg,#e8e0d0,#d4c4a4,#b8a880)"></div>
+            <div class="galerie__overlay">
+              <div class="galerie__overlay-content">
+                <span>Peinture</span>
+                <h3>Aquarelle florale</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="galerie__item reveal reveal--delay-1" data-cat="dessin">
+          <div class="galerie__img" style="aspect-ratio:3/4">
+            <div class="galerie__bg" style="background:linear-gradient(160deg,#d0dde8,#a4b8c8,#7890a8)"></div>
+            <div class="galerie__overlay">
+              <div class="galerie__overlay-content">
+                <span>Dessin</span>
+                <h3>Étude de mains</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="galerie__item reveal reveal--delay-2" data-cat="portcle">
+          <div class="galerie__img" style="aspect-ratio:1">
+            <div class="galerie__bg" style="background:linear-gradient(160deg,#e8e8d0,#c8c8a0,#a8a878)"></div>
+            <div class="galerie__overlay">
+              <div class="galerie__overlay-content">
+                <span>Port-clé</span>
+                <h3>Fleur en résine</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="galerie__item reveal" data-cat="autre">
+          <div class="galerie__img" style="aspect-ratio:4/3">
+            <div class="galerie__bg" style="background:linear-gradient(160deg,#e8d8d0,#c8a89a,#a87868)"></div>
+            <div class="galerie__overlay">
+              <div class="galerie__overlay-content">
+                <span>Autre</span>
+                <h3>Carnet décoré</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="galerie__item reveal reveal--delay-1" data-cat="peinture">
+          <div class="galerie__img" style="aspect-ratio:1">
+            <div class="galerie__bg" style="background:linear-gradient(160deg,#d8e8d8,#a8c8a8,#78a878)"></div>
+            <div class="galerie__overlay">
+              <div class="galerie__overlay-content">
+                <span>Peinture</span>
+                <h3>Feuilles d'automne</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="galerie__item reveal reveal--delay-2" data-cat="dessin">
+          <div class="galerie__img" style="aspect-ratio:3/4">
+            <div class="galerie__bg" style="background:linear-gradient(160deg,#e0d8e8,#c0b0d0,#9888b0)"></div>
+            <div class="galerie__overlay">
+              <div class="galerie__overlay-content">
+                <span>Dessin</span>
+                <h3>Paysage imaginaire</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="galerie__item reveal" data-cat="portcle">
+          <div class="galerie__img" style="aspect-ratio:1">
+            <div class="galerie__bg" style="background:linear-gradient(160deg,#e8e0d0,#d0c0a0,#b0a080)"></div>
+            <div class="galerie__overlay">
+              <div class="galerie__overlay-content">
+                <span>Port-clé</span>
+                <h3>Étoile en argile</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="galerie__item reveal reveal--delay-1" data-cat="autre">
+          <div class="galerie__img" style="aspect-ratio:4/3">
+            <div class="galerie__bg" style="background:linear-gradient(160deg,#d8e0e8,#a8b8c8,#7890a8)"></div>
+            <div class="galerie__overlay">
+              <div class="galerie__overlay-content">
+                <span>Autre</span>
+                <h3>Marque-pages illustrés</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="galerie__item reveal reveal--delay-2" data-cat="peinture">
+          <div class="galerie__img" style="aspect-ratio:3/4">
+            <div class="galerie__bg" style="background:linear-gradient(160deg,#f0e8d8,#e0c8a0,#c0a060)"></div>
+            <div class="galerie__overlay">
+              <div class="galerie__overlay-content">
+                <span>Peinture</span>
+                <h3>Coucher de soleil</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="galerie__empty" id="galerieEmpty" hidden>
+        <p>Aucune création dans cette catégorie pour l'instant.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="cta-band section section--dark">
+    <div class="container cta-band__inner reveal">
+      <div>
+        <h2>Vous avez un coup de cœur ?</h2>
+        <p>Contactez-moi pour commander ou poser une question.</p>
+      </div>
+      <a href="contact.html" class="btn btn--cream">Me contacter →</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="../index.html" class="nav__logo">
+          <span class="nav__logo-text">L'Atelier <em>Fait Main</em></span>
+        </a>
+        <p>Créations artisanales faites<br/>avec amour et patience.</p>
+      </div>
+      <div class="footer__nav">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="../index.html">Accueil</a></li>
+          <li><a href="galerie.html">Galerie</a></li>
+          <li><a href="about.html">À propos</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer__social">
+        <h4>Retrouvez-moi</h4>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Pinterest</a></li>
+          <li><a href="#">Etsy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>© 2025 L'Atelier Fait Main. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/galerie.js"></script>
+</body>
+</html>

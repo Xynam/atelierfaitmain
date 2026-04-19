@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>L'Atelier Fait Main — Créations artisanales</title>
+  <meta name="description" content="L'Atelier Fait Main — dessins, peintures, port-clés et créations artisanales uniques faites avec passion." />
+  <meta name="keywords" content="atelier, fait main, dessins, peintures, port-clés, artisanat, créations" />
+  <meta name="author" content="L'Atelier Fait Main" />
+  <meta property="og:title" content="L'Atelier Fait Main" />
+  <meta property="og:description" content="Créations artisanales uniques — dessins, peintures, port-clés et plus." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://xynam.github.io" />
+  <link rel="canonical" href="https://xynam.github.io" />
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/home.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <span class="nav__logo-text">L'Atelier <em>Fait Main</em></span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="index.html" class="nav__link nav__link--active">Accueil</a></li>
+        <li><a href="pages/galerie.html" class="nav__link">Galerie</a></li>
+        <li><a href="pages/about.html" class="nav__link">À propos</a></li>
+        <li><a href="pages/contact.html" class="nav__link">Contact</a></li>
+      </ul>
+      <button class="nav__hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="mobileMenu">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="pages/galerie.html">Galerie</a></li>
+        <li><a href="pages/about.html">À propos</a></li>
+        <li><a href="pages/contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero__texture"></div>
+    <div class="container hero__inner">
+      <div class="hero__eyebrow reveal">
+        <span class="hero__line"></span>
+        Créations artisanales
+      </div>
+      <h1 class="hero__title reveal reveal--delay-1">
+        Chaque pièce<br/>
+        raconte une<br/>
+        <em>histoire.</em>
+      </h1>
+      <p class="hero__sub reveal reveal--delay-2">
+        Dessins, peintures, port-clés et objets faits main —<br/>
+        créés avec soin, pensés pour durer.
+      </p>
+      <div class="hero__actions reveal reveal--delay-3">
+        <a href="pages/galerie.html" class="btn btn--dark">Voir la galerie</a>
+        <a href="pages/contact.html" class="btn btn--outline">Commander une pièce</a>
+      </div>
+    </div>
+    <div class="hero__scroll-hint reveal reveal--delay-4">
+      <span>Défiler</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- Categories -->
+  <section class="categories section">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__label">Ce que je crée</span>
+        <h2 class="section__title">Les collections</h2>
+      </div>
+      <div class="categories__grid">
+
+        <a href="pages/galerie.html?filter=dessin" class="category-card reveal">
+          <div class="category-card__img">
+            <div class="category-card__placeholder" style="background: linear-gradient(160deg, #f5ede0 0%, #e8d5b7 100%);">
+              <svg class="category-card__icon" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 60 Q30 20 50 25 Q65 28 55 45 Q48 58 35 55 Q25 52 30 42" stroke="#8b6914" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+                <circle cx="52" cy="24" r="3" fill="#c9956a" opacity="0.6"/>
+              </svg>
+            </div>
+          </div>
+          <div class="category-card__body">
+            <h3>Dessins</h3>
+            <span>Illustrations & esquisses →</span>
+          </div>
+        </a>
+
+        <a href="pages/galerie.html?filter=peinture" class="category-card reveal reveal--delay-1">
+          <div class="category-card__img">
+            <div class="category-card__placeholder" style="background: linear-gradient(160deg, #e8f0e8 0%, #c8ddc8 100%);">
+              <svg class="category-card__icon" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="18" y="18" width="44" height="44" rx="3" stroke="#3a5a3a" stroke-width="1.5" fill="none"/>
+                <circle cx="30" cy="32" r="5" fill="#7aab7a" opacity="0.5"/>
+                <circle cx="48" cy="28" r="8" fill="#4a8a4a" opacity="0.3"/>
+                <ellipse cx="38" cy="48" rx="12" ry="8" fill="#2d6a2d" opacity="0.25"/>
+              </svg>
+            </div>
+          </div>
+          <div class="category-card__body">
+            <h3>Peintures</h3>
+            <span>Tableaux originaux →</span>
+          </div>
+        </a>
+
+        <a href="pages/galerie.html?filter=portcle" class="category-card reveal reveal--delay-2">
+          <div class="category-card__img">
+            <div class="category-card__placeholder" style="background: linear-gradient(160deg, #f0e8f0 0%, #ddc8dd 100%);">
+              <svg class="category-card__icon" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="35" cy="32" r="12" stroke="#7a3a7a" stroke-width="1.5" fill="none"/>
+                <circle cx="35" cy="32" r="5" fill="#7a3a7a" opacity="0.3"/>
+                <path d="M44 40 L56 58" stroke="#7a3a7a" stroke-width="2" stroke-linecap="round"/>
+                <path d="M52 54 L60 50" stroke="#7a3a7a" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+          </div>
+          <div class="category-card__body">
+            <h3>Port-clés</h3>
+            <span>Accessoires faits main →</span>
+          </div>
+        </a>
+
+        <a href="pages/galerie.html?filter=autre" class="category-card reveal reveal--delay-3">
+          <div class="category-card__img">
+            <div class="category-card__placeholder" style="background: linear-gradient(160deg, #f0ede0 0%, #e0d8c0 100%);">
+              <svg class="category-card__icon" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <polygon points="40,15 55,35 50,58 30,58 25,35" stroke="#8a7a3a" stroke-width="1.5" fill="none"/>
+                <circle cx="40" cy="40" r="6" fill="#c9b56a" opacity="0.4"/>
+                <path d="M32 25 Q40 20 48 25" stroke="#8a7a3a" stroke-width="1" fill="none"/>
+              </svg>
+            </div>
+          </div>
+          <div class="category-card__body">
+            <h3>Autres créations</h3>
+            <span>Objets & surprises →</span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Works -->
+  <section class="featured section section--warm">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__label">À la une</span>
+        <h2 class="section__title">Pièces récentes</h2>
+      </div>
+      <div class="featured__grid">
+
+        <div class="piece piece--tall reveal">
+          <div class="piece__img">
+            <div class="piece__placeholder piece__placeholder--1"></div>
+            <div class="piece__hover">
+              <a href="pages/galerie.html" class="piece__hover-btn">Voir →</a>
+            </div>
+          </div>
+          <div class="piece__info">
+            <span class="piece__cat">Peinture</span>
+            <h3>Sans titre #4</h3>
+          </div>
+        </div>
+
+        <div class="piece reveal reveal--delay-1">
+          <div class="piece__img">
+            <div class="piece__placeholder piece__placeholder--2"></div>
+            <div class="piece__hover">
+              <a href="pages/galerie.html" class="piece__hover-btn">Voir →</a>
+            </div>
+          </div>
+          <div class="piece__info">
+            <span class="piece__cat">Dessin</span>
+            <h3>Portrait au crayon</h3>
+          </div>
+        </div>
+
+        <div class="piece reveal reveal--delay-2">
+          <div class="piece__img">
+            <div class="piece__placeholder piece__placeholder--3"></div>
+            <div class="piece__hover">
+              <a href="pages/galerie.html" class="piece__hover-btn">Voir →</a>
+            </div>
+          </div>
+          <div class="piece__info">
+            <span class="piece__cat">Port-clé</span>
+            <h3>Lune brodée</h3>
+          </div>
+        </div>
+
+        <div class="piece reveal reveal--delay-3">
+          <div class="piece__img">
+            <div class="piece__placeholder piece__placeholder--4"></div>
+            <div class="piece__hover">
+              <a href="pages/galerie.html" class="piece__hover-btn">Voir →</a>
+            </div>
+          </div>
+          <div class="piece__info">
+            <span class="piece__cat">Peinture</span>
+            <h3>Aquarelle florale</h3>
+          </div>
+        </div>
+
+      </div>
+      <div class="featured__footer reveal">
+        <a href="pages/galerie.html" class="btn btn--dark">Toute la galerie →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Atelier Quote -->
+  <section class="quote section">
+    <div class="container">
+      <blockquote class="quote__block reveal">
+        <span class="quote__mark">"</span>
+        <p>L'artisanat, c'est mettre un peu de soi dans chaque pièce — pour que celui qui la reçoit le sente.</p>
+        <cite>— L'Atelier Fait Main</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-band section section--dark">
+    <div class="container cta-band__inner reveal">
+      <div>
+        <h2>Une idée de cadeau unique ?</h2>
+        <p>Je crée des pièces sur commande. Parlons de votre projet.</p>
+      </div>
+      <a href="pages/contact.html" class="btn btn--cream">Prendre contact →</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="index.html" class="nav__logo">
+          <span class="nav__logo-text">L'Atelier <em>Fait Main</em></span>
+        </a>
+        <p>Créations artisanales faites<br/>avec amour et patience.</p>
+      </div>
+      <div class="footer__nav">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="pages/galerie.html">Galerie</a></li>
+          <li><a href="pages/about.html">À propos</a></li>
+          <li><a href="pages/contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer__social">
+        <h4>Retrouvez-moi</h4>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Pinterest</a></li>
+          <li><a href="#">Etsy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>© 2025 L'Atelier Fait Main. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

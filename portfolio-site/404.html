@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page introuvable — L'Atelier Fait Main</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,300&family=Jost:wght@300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <style>
+    .notfound { min-height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; padding: var(--space-xl); }
+    .notfound__num { font-family: var(--font-display); font-size: clamp(6rem, 20vw, 12rem); font-weight: 300; line-height: 1; color: var(--text-faint); letter-spacing: -0.05em; margin-bottom: var(--space-lg); }
+    .notfound h2 { font-family: var(--font-display); font-size: 1.5rem; font-weight: 300; font-style: italic; color: var(--text); margin-bottom: var(--space-sm); }
+    .notfound p { font-size: 0.85rem; font-weight: 300; color: var(--text-muted); margin-bottom: var(--space-2xl); }
+  </style>
+</head>
+<body>
+  <div class="notfound">
+    <div>
+      <div class="notfound__num">404</div>
+      <h2>Cette page n'existe pas.</h2>
+      <p>Elle a peut-être été déplacée, ou l'adresse est incorrecte.</p>
+      <a href="index.html" class="btn btn--dark">← Retour à l'accueil</a>
+    </div>
+  </div>
+</body>
+</html>

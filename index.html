@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>L'Atelier Fait Main — Créations artisanales</title>
+  <meta name="description" content="L'Atelier Fait Main — dessins, tableaux, port-clés et objets artisanaux. Chaque pièce est unique, faite avec soin et intention." />
+  <meta name="keywords" content="atelier, fait main, dessins, tableaux, port-clés, artisanat, création, art" />
+  <meta name="author" content="L'Atelier Fait Main" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="L'Atelier Fait Main — Créations artisanales" />
+  <meta property="og:description" content="Dessins, tableaux, port-clés et objets artisanaux. Chaque pièce est unique." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://xynam.github.io/Portfolio/" />
+  <link rel="canonical" href="https://xynam.github.io/Portfolio/" />
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/home.css" />
+</head>
+<body>
+
+  <!-- Curseur personnalisé -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor cursor--ring" id="cursorRing"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <span class="nav__logo-main">L'Atelier Fait Main</span>
+        <span class="nav__logo-sub">Créations artisanales</span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="index.html" class="nav__link nav__link--active">Accueil</a></li>
+        <li><a href="pages/galerie.html" class="nav__link">Galerie</a></li>
+        <li><a href="pages/a-propos.html" class="nav__link">À propos</a></li>
+        <li><a href="pages/contact.html" class="nav__link">Contact</a></li>
+      </ul>
+      <a href="pages/contact.html" class="nav__contact">Commander</a>
+      <button class="nav__hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="mobileMenu">
+      <a href="index.html">Accueil</a>
+      <a href="pages/galerie.html">Galerie</a>
+      <a href="pages/a-propos.html">À propos</a>
+      <a href="pages/contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero__left">
+      <div class="hero__content">
+        <div class="hero__eyebrow reveal">
+          <span class="hero__line"></span>
+          <span>Fait à la main, avec soin</span>
+        </div>
+        <h1 class="hero__title reveal reveal--delay-1">
+          L'art du<br/>
+          <em>geste</em><br/>
+          artisanal.
+        </h1>
+        <p class="hero__desc reveal reveal--delay-2">
+          Chaque création naît d'une intention, d'un matériau et d'un moment unique. Dessins, tableaux, port-clés — des objets qui portent une histoire.
+        </p>
+        <div class="hero__actions reveal reveal--delay-3">
+          <a href="pages/galerie.html" class="btn btn--dark">Voir la galerie <span class="btn__arrow">→</span></a>
+          <a href="pages/a-propos.html" class="btn btn--outline">L'atelier</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero__right reveal">
+      <div class="hero__mosaic">
+        <div class="hero__mosaic-item hero__mosaic-item--1">
+          <div class="hero__img-placeholder" style="background: linear-gradient(160deg, #e8ddd0 0%, #c9b99a 100%);">
+            <span>Dessin</span>
+          </div>
+        </div>
+        <div class="hero__mosaic-item hero__mosaic-item--2">
+          <div class="hero__img-placeholder" style="background: linear-gradient(160deg, #d4c4b0 0%, #b8a080 100%);">
+            <span>Tableau</span>
+          </div>
+        </div>
+        <div class="hero__mosaic-item hero__mosaic-item--3">
+          <div class="hero__img-placeholder" style="background: linear-gradient(160deg, #c8b89a 0%, #a08060 100%);">
+            <span>Port-clé</span>
+          </div>
+        </div>
+        <div class="hero__mosaic-item hero__mosaic-item--4">
+          <div class="hero__img-placeholder" style="background: linear-gradient(160deg, #e0d4c4 0%, #c0a888 100%);">
+            <span>Création</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero__stat-float">
+        <strong>100%</strong>
+        <span>Fait main</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Catégories -->
+  <section class="categories section section--warm">
+    <div class="container">
+      <div class="categories__header">
+        <span class="section__eyebrow reveal">Les créations</span>
+        <h2 class="section__title reveal reveal--delay-1">Ce qui sort<br/><em>de l'atelier</em></h2>
+      </div>
+      <div class="categories__grid">
+
+        <a href="pages/galerie.html?cat=dessins" class="category-card reveal">
+          <div class="category-card__img">
+            <div class="category-card__placeholder" style="background: linear-gradient(145deg, #f0e8dc, #d4c4aa);"></div>
+            <div class="category-card__num">01</div>
+          </div>
+          <div class="category-card__body">
+            <h3>Dessins</h3>
+            <p>Illustrations au crayon, stylo ou encre. Portraits, natures mortes, paysages imaginaires.</p>
+            <span class="category-card__link">Découvrir →</span>
+          </div>
+        </a>
+
+        <a href="pages/galerie.html?cat=tableaux" class="category-card reveal reveal--delay-1">
+          <div class="category-card__img">
+            <div class="category-card__placeholder" style="background: linear-gradient(145deg, #e8ddd0, #c0a880);"></div>
+            <div class="category-card__num">02</div>
+          </div>
+          <div class="category-card__body">
+            <h3>Tableaux</h3>
+            <p>Peintures à l'acrylique ou à l'aquarelle. Compositions abstraites ou figuratives sur toile.</p>
+            <span class="category-card__link">Découvrir →</span>
+          </div>
+        </a>
+
+        <a href="pages/galerie.html?cat=portcles" class="category-card reveal reveal--delay-2">
+          <div class="category-card__img">
+            <div class="category-card__placeholder" style="background: linear-gradient(145deg, #ddd4c8, #b09878);"></div>
+            <div class="category-card__num">03</div>
+          </div>
+          <div class="category-card__body">
+            <h3>Port-clés</h3>
+            <p>Objets en résine, cuir ou tissu. Chaque port-clé est une petite sculpture à porter avec soi.</p>
+            <span class="category-card__link">Découvrir →</span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Sélection -->
+  <section class="selection section">
+    <div class="container">
+      <div class="selection__header">
+        <div>
+          <span class="section__eyebrow reveal">Sélection</span>
+          <h2 class="section__title reveal reveal--delay-1">Pièces récentes</h2>
+        </div>
+        <a href="pages/galerie.html" class="btn btn--outline reveal">Toute la galerie →</a>
+      </div>
+
+      <div class="gallery-grid reveal reveal--delay-1">
+
+        <div class="gallery-item gallery-item--wide">
+          <div class="gallery-item__img">
+            <div class="gallery-item__placeholder" style="background: linear-gradient(135deg, #e8ddd0 0%, #c8b090 60%, #a88060 100%);">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="rgba(26,24,20,0.15)" stroke-width="1"><rect x="8" y="8" width="32" height="32" rx="2"/><circle cx="24" cy="22" r="6"/><path d="M8 38 L16 28 L24 34 L34 20 L40 30"/></svg>
+            </div>
+            <div class="gallery-item__overlay">
+              <div class="gallery-item__info">
+                <h3>Série Forêt</h3>
+                <span>Dessin — Crayon graphite</span>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-item__body">
+            <h3>Série Forêt nº3</h3>
+            <span>Dessin</span>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <div class="gallery-item__img">
+            <div class="gallery-item__placeholder" style="background: linear-gradient(135deg, #d4c8bc 0%, #b0987a 100%);">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="rgba(26,24,20,0.15)" stroke-width="1"><rect x="6" y="6" width="36" height="36" rx="2"/><path d="M6 20 Q20 10 34 20 Q40 24 42 30"/><circle cx="30" cy="16" r="4"/></svg>
+            </div>
+            <div class="gallery-item__overlay">
+              <div class="gallery-item__info">
+                <h3>Horizon doré</h3>
+                <span>Tableau — Acrylique</span>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-item__body">
+            <h3>Horizon doré</h3>
+            <span>Tableau</span>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <div class="gallery-item__img">
+            <div class="gallery-item__placeholder" style="background: linear-gradient(135deg, #c8beb4 0%, #a08870 100%);">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="rgba(26,24,20,0.15)" stroke-width="1"><path d="M24 8 C28 8 32 12 32 18 L32 36 C32 38 30 40 28 40 L20 40 C18 40 16 38 16 36 L16 18 C16 12 20 8 24 8Z"/><circle cx="24" cy="20" r="3"/><line x1="20" y1="30" x2="28" y2="30"/><line x1="21" y1="35" x2="27" y2="35"/></svg>
+            </div>
+            <div class="gallery-item__overlay">
+              <div class="gallery-item__info">
+                <h3>Port-clé Lune</h3>
+                <span>Port-clé — Résine</span>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-item__body">
+            <h3>Port-clé Lune</h3>
+            <span>Port-clé</span>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <div class="gallery-item__img">
+            <div class="gallery-item__placeholder" style="background: linear-gradient(135deg, #ddd0c4 0%, #b89878 100%);">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="rgba(26,24,20,0.15)" stroke-width="1"><circle cx="24" cy="24" r="16"/><path d="M16 24 Q20 16 24 24 Q28 32 32 24"/></svg>
+            </div>
+            <div class="gallery-item__overlay">
+              <div class="gallery-item__info">
+                <h3>Abstraction nº7</h3>
+                <span>Tableau — Aquarelle</span>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-item__body">
+            <h3>Abstraction nº7</h3>
+            <span>Tableau</span>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <div class="gallery-item__img">
+            <div class="gallery-item__placeholder" style="background: linear-gradient(135deg, #e0d4c8 0%, #c0a888 100%);">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="rgba(26,24,20,0.15)" stroke-width="1"><path d="M10 38 L24 10 L38 38 Z"/><line x1="16" y1="28" x2="32" y2="28"/></svg>
+            </div>
+            <div class="gallery-item__overlay">
+              <div class="gallery-item__info">
+                <h3>Portrait I</h3>
+                <span>Dessin — Encre</span>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-item__body">
+            <h3>Portrait I</h3>
+            <span>Dessin</span>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <div class="gallery-item__img">
+            <div class="gallery-item__placeholder" style="background: linear-gradient(135deg, #c8c0b4 0%, #a09080 100%);">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="rgba(26,24,20,0.15)" stroke-width="1"><rect x="14" y="10" width="20" height="28" rx="10"/><line x1="24" y1="38" x2="24" y2="44"/><line x1="18" y1="44" x2="30" y2="44"/><circle cx="24" cy="20" r="3"/></svg>
+            </div>
+            <div class="gallery-item__overlay">
+              <div class="gallery-item__info">
+                <h3>Port-clé Fleur</h3>
+                <span>Port-clé — Cuir</span>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-item__body">
+            <h3>Port-clé Fleur</h3>
+            <span>Port-clé</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Processus -->
+  <section class="process section section--dark">
+    <div class="container">
+      <div class="process__header">
+        <span class="section__eyebrow reveal" style="color: var(--accent);">La démarche</span>
+        <h2 class="section__title section__title--light reveal reveal--delay-1">Du geste<br/><em>à l'objet</em></h2>
+      </div>
+      <div class="process__steps">
+        <div class="process__step reveal">
+          <div class="process__step-num">01</div>
+          <h3>L'idée</h3>
+          <p>Tout commence par une esquisse, une émotion, une forme aperçue. Le carnet capte l'instant avant qu'il ne s'efface.</p>
+        </div>
+        <div class="process__step reveal reveal--delay-1">
+          <div class="process__step-num">02</div>
+          <h3>Le matériau</h3>
+          <p>Crayon, encre, toile, résine, cuir. Chaque matière a sa voix propre. Le choix du support fait partie de la création.</p>
+        </div>
+        <div class="process__step reveal reveal--delay-2">
+          <div class="process__step-num">03</div>
+          <h3>Le travail</h3>
+          <p>Pas de machine, pas de série. Chaque pièce est travaillée à la main, dans le silence de l'atelier, au rythme de la lumière.</p>
+        </div>
+        <div class="process__step reveal reveal--delay-3">
+          <div class="process__step-num">04</div>
+          <h3>L'objet</h3>
+          <p>Une pièce unique, signée. Elle quitte l'atelier pour trouver sa place dans votre quotidien ou sur vos murs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section section">
+    <div class="container">
+      <div class="cta-section__inner reveal">
+        <div class="cta-section__text">
+          <span class="section__eyebrow">Commandes personnalisées</span>
+          <h2 class="section__title">Une pièce<br/><em>rien que pour vous</em></h2>
+          <p class="section__desc">Vous avez une idée, un projet, une envie ? Je crée des pièces sur commande : dimensions, couleurs, thème — tout est possible.</p>
+          <div class="divider"></div>
+          <a href="pages/contact.html" class="btn btn--dark">Faire une demande <span class="btn__arrow">→</span></a>
+        </div>
+        <div class="cta-section__visual">
+          <div class="cta-section__frame">
+            <div class="cta-section__placeholder" style="background: linear-gradient(135deg, #f0e8dc 0%, #d4b890 50%, #b89060 100%);"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pied de page -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <div class="footer__brand-name">L'Atelier Fait Main</div>
+        <p>Des créations artisanales nées d'un geste sincère. Chaque pièce est unique et faite avec soin, pour durer.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="pages/galerie.html">Galerie</a></li>
+          <li><a href="pages/a-propos.html">À propos</a></li>
+          <li><a href="pages/contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Réseaux</h4>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Pinterest</a></li>
+          <li><a href="#">Etsy</a></li>
+          <li><a href="#">GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>© 2025 L'Atelier Fait Main — Tous droits réservés</p>
+      <p>Fait avec soin ✦</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
